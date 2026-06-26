@@ -3,6 +3,12 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.015
+- FIX Absturz beim Live-Sprechen mit Sparmodus (00.001.014): Die Vosk-Bibliothek stürzte beim Start mit „Can't obtain peer field ID for class com.sun.jna.Pointer" ab, weil ihre native JNA-Bibliothek nicht aus der APK entpackt werden konnte. Native Libs werden jetzt wieder entpackbar gepackt (useLegacyPackaging) + Proguard-Regeln für JNA/Vosk ergänzt. Sprachwort „connect" sollte jetzt laufen.
+
+## 00.001.014
+- NEU (experimentell): Sprachwort „connect" im Sparmodus. Im Leerlauf lauscht die App freihändig auf das gesprochene Wort „connect" und öffnet damit den Kanal (gleiche Wirkung wie der Verbinden-Knopf) – ideal beim Fahren. Läuft komplett offline auf dem Gerät (Vosk, ~40 MB Modell, daher ist die App größer geworden). Anzeige „höre auf connect …" im Leerlauf. Erkennung ist experimentell: draußen/bei Wind springt es evtl. nicht immer an – der Knopf bleibt als sichere Alternative. Verlassen weiter per Knopf / nach 1 Min Stille.
+
 ## 00.001.013
 - ÄNDERUNG Sparmodus: Der automatische Pegel-Trigger (Kanal öffnet bei jedem Geräusch) war unpraktisch und ist raus. Der Kanal wird jetzt BEWUSST per großem „Verbinden"-Knopf geöffnet. Danach bleibt er offen, solange geredet wird, und schließt nach 1 Minute Stille von selbst (Fenster einstellbar 5–120 s, Standard 60 s). Öffnet einer, werden die anderen automatisch mit-hochgezogen. Das Sprachwort „connect" zum freihändigen Öffnen folgt im nächsten Build.
 
