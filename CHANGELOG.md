@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.016
+- NEU: Akku-Schalter „Freihändig mit connect". Im Sprech-Bildschirm (unter dem Sparmodus-Schalter) lässt sich das „connect"-Lauschen ein-/ausschalten. Aus = nur der Verbinden-Knopf öffnet, dafür kein Dauer-Lauschen aufs Mikro → spart Akku. Standard: an. Pro Gerät gemerkt. Kurzanleitung um den Sparmodus/„connect"-Abschnitt ergänzt.
+
 ## 00.001.015
 - FIX Absturz beim Live-Sprechen mit Sparmodus (00.001.014): Die Vosk-Bibliothek stürzte beim Start mit „Can't obtain peer field ID for class com.sun.jna.Pointer" ab, weil ihre native JNA-Bibliothek nicht aus der APK entpackt werden konnte. Native Libs werden jetzt wieder entpackbar gepackt (useLegacyPackaging) + Proguard-Regeln für JNA/Vosk ergänzt. Sprachwort „connect" sollte jetzt laufen.
 
