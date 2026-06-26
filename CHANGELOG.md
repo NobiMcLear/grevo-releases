@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.013
+- ÄNDERUNG Sparmodus: Der automatische Pegel-Trigger (Kanal öffnet bei jedem Geräusch) war unpraktisch und ist raus. Der Kanal wird jetzt BEWUSST per großem „Verbinden"-Knopf geöffnet. Danach bleibt er offen, solange geredet wird, und schließt nach 1 Minute Stille von selbst (Fenster einstellbar 5–120 s, Standard 60 s). Öffnet einer, werden die anderen automatisch mit-hochgezogen. Das Sprachwort „connect" zum freihändigen Öffnen folgt im nächsten Build.
+
 ## 00.001.012
 - NEU (experimentell): Sparmodus im Sprech-Bildschirm. Der Sprachkanal ist nur offen, wenn wirklich geredet wird – Aufwecken automatisch per Stimme (lokale Mikro-Erkennung), danach bleibt der Kanal 15 s offen (einstellbar 5–60 s), dann schließt er. Spart Verbindungszeit. Schalter + Fenster-Regler live im Sprech-Bildschirm, Voreinstellung pro Gerät gemerkt; Privatmodus solange ausgeblendet. Hinweis: Die allererste Sekunde beim Aufwecken kann fehlen (Puffer-Variante folgt bei Bedarf), und draußen kann Wind den Kanal wecken (Schwelle justierbar).
 
