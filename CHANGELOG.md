@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.012
+- NEU (experimentell): Sparmodus im Sprech-Bildschirm. Der Sprachkanal ist nur offen, wenn wirklich geredet wird – Aufwecken automatisch per Stimme (lokale Mikro-Erkennung), danach bleibt der Kanal 15 s offen (einstellbar 5–60 s), dann schließt er. Spart Verbindungszeit. Schalter + Fenster-Regler live im Sprech-Bildschirm, Voreinstellung pro Gerät gemerkt; Privatmodus solange ausgeblendet. Hinweis: Die allererste Sekunde beim Aufwecken kann fehlen (Puffer-Variante folgt bei Bedarf), und draußen kann Wind den Kanal wecken (Schwelle justierbar).
+
 ## 00.001.011
 - FIX Stummschalten: Auf manchen Geräten (Tablet) schaltete „Stumm" nicht nur das Mikro, sondern auch die Wiedergabe ab – man hörte selbst nichts mehr. Stummschalten läuft jetzt über die Aufnahme-Lautstärke (0 = stumm), die Audio-Sitzung bleibt aktiv; Hören bleibt unberührt. Wirkt auf beiden Geräten gleich.
 
