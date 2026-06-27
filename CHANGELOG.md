@@ -3,6 +3,18 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.022
+- FIX: Absturz auf älteren **32-bit-Geräten** (z. B. manche Tablets) behoben. Die Wake-Word-Erkennung (sherpa-onnx) ist auf 32-bit-ARM technisch nicht lauffähig (stürzte beim Laden des Modells ab) und wird dort jetzt automatisch deaktiviert – die App läuft normal, „connect" geht per Knopf statt per Sprache. Auf 64-bit-Geräten unverändert mit Sprachwort.
+
+## 00.001.021
+- FIX: Im Sprech-Bildschirm waren auf kleineren Displays – vor allem im Sparmodus mit Reglern und Schaltern – die unteren Knöpfe (Stumm/Verlassen) abgeschnitten und nicht bedienbar. Die Ansicht ist jetzt scrollbar, alle Knöpfe sind erreichbar.
+
+## 00.001.020
+- NEU: kurzer **„Verbunden"-Ping** beim eigenen Verbinden (per Knopf oder Wort „connect"). So hört man, dass der Kanal offen ist, ohne aufs Handy zu schauen – besonders beim Fahren/im Sparmodus, wo die gesprochene Beitritts-Ansage aus ist. Spielt nicht, wenn man nur von anderen automatisch mit-hochgezogen wurde.
+
+## 00.001.019
+- Wake-Word „connect" von Vosk auf **sherpa-onnx** (k2-fsa) umgestellt. Vorteile: läuft jetzt **auch auf iOS** (vorher nur Android), kleineres Modell (~5 MB statt ~40 MB → schlankere App) und **ältere Android-Geräte werden wieder unterstützt** (minSdk 30 → 23, ab Android 6). Bedienung unverändert: im Sparmodus „connect" sagen öffnet den Kanal; der „Verbinden"-Knopf bleibt überall die Alternative. (Vorbereitung für die iOS-Version.)
+
 ## 00.001.018
 - ABRECHNUNG (unsichtbar, Übergangslösung): Weil Agora die echten Channel-Events (Beitritt/Verlassen) derzeit nicht an unseren Server liefert – nur Test-Pings kommen an, ein Support-Ticket läuft – misst die App jetzt die Verbindungszeit zum Gruppen-Kanal SELBST und meldet die Minuten beim Verlassen an Supabase (neue RPC `app_report_usage`, Supabase-Abschnitt 12 muss ausgeführt werden). Jedes Gerät meldet seine eigene Zeit; im Sparmodus werden mehrere Verbindungs-Fenster zusammengezählt. Damit hängt die Minuten-Verbuchung nicht mehr an Agoras Webhook. Hinweis: Bei hartem App-Schließen (Absturz) kann eine Meldung ausfallen; sobald Agoras Webhook wieder liefert, ist das die verlässliche Quelle. Keine sichtbare Änderung für Tester.
 
