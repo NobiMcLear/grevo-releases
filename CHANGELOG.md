@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 00.001.018
+- ABRECHNUNG (unsichtbar, Übergangslösung): Weil Agora die echten Channel-Events (Beitritt/Verlassen) derzeit nicht an unseren Server liefert – nur Test-Pings kommen an, ein Support-Ticket läuft – misst die App jetzt die Verbindungszeit zum Gruppen-Kanal SELBST und meldet die Minuten beim Verlassen an Supabase (neue RPC `app_report_usage`, Supabase-Abschnitt 12 muss ausgeführt werden). Jedes Gerät meldet seine eigene Zeit; im Sparmodus werden mehrere Verbindungs-Fenster zusammengezählt. Damit hängt die Minuten-Verbuchung nicht mehr an Agoras Webhook. Hinweis: Bei hartem App-Schließen (Absturz) kann eine Meldung ausfallen; sobald Agoras Webhook wieder liefert, ist das die verlässliche Quelle. Keine sichtbare Änderung für Tester.
+
 ## 00.001.017
 - GRUNDLAGEN Abrechnung/Abo (unsichtbar, Vorbereitung): DB-Datenmodell für Kontingent, Stufen (Free/Pro/Mega, Platzhalter), Verbrauch, Zukäufe (einheitlicher Minuten-Topf) und Zahler-Modus pro Gruppe angelegt (Supabase Abschnitt 10). App vergibt beim Live-Sprechen jetzt eine FESTE Agora-uid je Nutzer (für die spätere Minuten-Zuordnung) statt einer Zufalls-uid; greift erst, wenn das Datenmodell in Supabase ausgeführt ist – sonst unverändert. Keine sichtbare Änderung für Tester.
 
