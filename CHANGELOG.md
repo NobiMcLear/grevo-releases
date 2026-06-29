@@ -3,6 +3,11 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 01.001.006
+- NEU: **Sponsor** (frei bestimmbarer Zahler je Gruppe). Ein Admin kann ein beliebiges Mitglied als „Sponsor" der Gruppe bestimmen – dann läuft die Verbindungszeit aller Teilnehmer über dessen Konto. Das vorgeschlagene Mitglied muss ZUSTIMMEN (kein Belasten fremder Konten ohne Einverständnis); wählt ein Admin sich selbst, ist es sofort aktiv. Gilt dauerhaft, bis ein Admin es ändert/entfernt. Bedienung im Gruppen-Detail (Sponsor bestimmen über das Mitglieder-Menü oder „Ich zahle"; Annehmen/Ablehnen; entfernen). Im Sprech-Bildschirm zeigt ein Hinweis „Bezahlt von …" (für alle) und beim ERSTMALIGEN Reingehen einmalig ein Reminder. Admin (Verwaltung) und Zahler sind damit getrennt; der Begriff „Leader" bleibt für den späteren Navigationsmodus reserviert. In 5 Sprachen. Android + iOS.
+- NEU: Bei aufgebrauchtem Kontingent zeigt die App eine verständliche Meldung „Kontingent aufgebraucht …" statt des allgemeinen Verbindungsfehlers.
+- Backend: Token-Server und Abrechnungs-Webhook nutzen jetzt den Sponsor (sponsor_profile_id) als Zahler statt des alten pay_mode (schema.sql Abschnitt 15, in Supabase ausgeführt).
+
 ## 01.001.005
 - FIX (Abrechnung): Doppelzählung der Verbindungsminuten behoben. Seit 01.001.004 liefert der Agora-Webhook echte Leave-Events (104) und verbucht die Zeit serverseitig. Die zusätzliche app-seitige Minuten-Meldung aus 00.001.018 (damals nur Fallback) ist jetzt deaktiviert, sonst wäre jede Tour doppelt gezählt worden. Der Webhook ist alleinige Abrechnungsquelle (zuverlässig auch bei App-Absturz, da Agora das Verbindungsende per Timeout meldet). Keine sichtbare Funktionsänderung. Android + iOS.
 
