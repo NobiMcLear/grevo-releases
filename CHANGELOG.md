@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 01.001.008
+- NEU: **Ende-zu-Ende-Verschlüsselung** der Live-Sprache (Agora AES-256-GCM2). Jede Gruppe hat einen geheimen Schlüssel, den nur ihre Mitglieder kennen (über Supabase, NIE an Agora) – die Sprache ist damit abhörsicher, auch Agora kann nicht mithören. Im Sprech-Bildschirm zeigt ein grünes Schloss „Ende-zu-Ende verschlüsselt". Technisch: enableEncryption vor dem Beitritt; alle im Kanal nutzen denselben Gruppen-Schlüssel. Fail-open: falls der Schlüssel fehlt, wird wie bisher verbunden. Android + iOS.
+
 ## 01.001.007
 - NEU: Auf der Startseite erscheint bei einer Gruppe, in der DU als Sponsor vorgeschlagen wurdest, ein deutlicher Hinweis „Sponsor-Anfrage – tippen zum Beantworten". Antippen öffnet die Gruppe, wo du mit Annehmen/Ablehnen antwortest. So findet man die Anfrage sofort, ohne in die Gruppe suchen zu müssen. In 5 Sprachen. Android + iOS.
 
