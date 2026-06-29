@@ -1,3 +1,7 @@
+## 01.001.010
+- FIX: Beendet der Sponsor sein Sponsoring im Gruppen-Detail (oder ohne in der Sprechrunde zu sein), merken es jetzt ALLE Verbundenen zuverlaessig (Supabase-Realtime) und werden gefragt.
+- FIX: Nach dem Verlassen der Sprechrunde wird die Gruppen-Detailseite neu geladen (kein veraltetes Bezahlt von... mehr). Android + iOS.
+
 ## 01.001.009
 - NEU: Der Sponsor kann sein Sponsoring selbst beenden (auch ohne Admin) - Sponsoring beenden im Sprech-Bildschirm und im Gruppen-Detail. Danach zahlt die Gruppe wieder selbst.
 - NEU: Beendet der Sponsor waehrend einer laufenden Runde, werden die Verbundenen gefragt: auf eigene Kosten weiter (Ja) oder trennen (Nein / keine Antwort nach ca. 20s).
