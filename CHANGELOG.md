@@ -1,3 +1,8 @@
+## 01.001.009
+- NEU: Der Sponsor kann sein Sponsoring selbst beenden (auch ohne Admin) - Sponsoring beenden im Sprech-Bildschirm und im Gruppen-Detail. Danach zahlt die Gruppe wieder selbst.
+- NEU: Beendet der Sponsor waehrend einer laufenden Runde, werden die Verbundenen gefragt: auf eigene Kosten weiter (Ja) oder trennen (Nein / keine Antwort nach ca. 20s).
+- VERBESSERT: Gruppen-Uebersicht frischt die Verbindungsanzahl regelmaessig automatisch auf. Android + iOS.
+
 # Grevo – Änderungsliste
 
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
