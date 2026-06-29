@@ -3,6 +3,52 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 01.001.004
+- FIX (Abrechnung/Webhook): Agora-Sprachkanäle nutzen jetzt das Profil **LiveBroadcasting** statt Communication. Grund: Agora-Support (Ticket #11991) hat bestätigt, dass die RTC-Channel-Event-Callbacks 103 (Beitritt) / 104 (Verlassen) / 112 NUR im LiveBroadcasting-Profil ausgelöst werden – im Communication-Profil kamen nie echte Events am Webhook an. Rolle bleibt Broadcaster, am Sprechverhalten ändert sich nichts. Damit kann die serverseitige Minutenverbuchung (agora-webhook) endlich echte Sessions zählen. Android + iOS.
+
+## 01.001.003
+- NEU: Abrechnungsansicht im Profil. Zeigt deine Stufe (Free/Pro/Mega), das Monats-Kontingent als Balken (verbraucht/übrig), eventuelle Zusatz-Minuten, das Reset-Datum sowie die letzten Touren (Datum, Gruppe, Dauer, wer bezahlt hat) und Käufe. Reine Leseansicht auf Basis der vorhandenen Abrechnungsdaten (my_billing + neue Lese-RPC my_usage_history, schema.sql Abschnitt 13 – muss in Supabase ausgeführt werden). In 5 Sprachen. Erreichbar über Profil → Abrechnung. Android + iOS.
+
+## 01.001.002
+- NEU: In-App-Hilfe. Über einen Hilfe-Knopf (Fragezeichen) in der Kopfzeile der Startseite UND im Profil öffnet sich die Anleitung als eingebettete Web-Ansicht (grevo.mclear.ch/hilfe.html). Vorteil: Die Hilfe wird online gepflegt und ist sofort aktuell – ohne neues App-Update. Paket `webview_flutter` ergänzt; bei fehlendem Internet erscheint ein Hinweis mit „Erneut versuchen“. App-Sprache wird der Seite als ?lang= mitgegeben. In 5 Sprachen (Hilfe/Help/Aide/Aiuto/Ajuda). Android + iOS.
+
+## 01.001.001
+- Grevo wird ab dieser Version offiziell auf BEIDEN Plattformen unterstuetzt: **Android UND iOS (iPhone/iPad)**. Beide laufen mit identischem Funktionsstand.
+- ERSTE LAUFFAEHIGE VERSION auf allen Plattformen (Android + iOS). Hauptrelease auf 01 angehoben. WICHTIG/Lehre: Die iOS-Versionsanzeige 0.1.33 (033) war NIEDRIGER als das schon auf TestFlight verteilte 1.0.0 -> TestFlight wertete sie als Downgrade und bot den Build den internen Testern nicht zum Update an (nur 1.0.0 (6) war sichtbar). Build 6 (1.0.0) enthielt aber bereits den funktionierenden Iris-Fix. FIX: ab jetzt 01.001.001 -> Apple-Versionsname wird (via codemagic-Ableitung) `1.1.1` (>1.0.0, wird wieder als Update angeboten). Android: versionName 1.1.1, versionCode 1001001 (>2002, installiert sauber drueber). Keine Funktionsaenderung gegenueber 033 - reine Versions-/Verteilkorrektur.
+
+## 00.001.033
+- TestFlight-Versionsanzeige: codemagic.yaml leitet den Versionsnamen jetzt automatisch aus `lib/version.dart` ab (z.B. 00.001.033 -> `0.1.33`; Apple erlaubt keine fuehrenden Nullen, daher pro Segment auf Integer gekuerzt). Die Build-Nummer in Klammern bleibt der automatische, stetig steigende Zaehler. TestFlight zeigt damit `0.1.33 (N)` statt `1.0.0`. Einzige Pflegestelle bleibt appVersion in version.dart. Nur Anzeige/Bauweg - keine App-Funktionsaenderung.
+
+## 00.001.032
+- FIX iOS Live-Sprechen (2. Anlauf): Der `-force_load`-Versuch (030/031) griff nicht, App stuerzte weiter beim Agora-Init ab (`Iris_InitDartApiDL ... symbol not found`, per iPhone-Log bestaetigt). Ursache ist das statische Linken: Bei `use_frameworks! :linkage => :static` landet das nur zur Laufzeit per dlsym gesuchte Iris-Symbol nicht auffindbar in der App. FIX: statisches Linken entfernt -> normales `use_frameworks!` (dynamisch); der Agora-Iris-Wrapper laedt als Dylib, dlsym findet das Symbol. SPM ist weiterhin aus (loest den frueheren AgoraRtcWrapper-Header-Fehler), use_modular_headers! bleibt fuer Firebase. Nur iOS-Bauweg - Android unveraendert.
+
+## 00.001.031
+- HOTFIX Podfile: Der 00.001.030-Build scheiterte an `pod install` ("Invalid Podfile: syntax errors found") - beim Speichern war das Podfile abgeschnitten worden, der `post_install`-Block blieb offen. Podfile vollstaendig neu geschrieben und Syntax mit `ruby -c` geprueft (Syntax OK). Inhaltlich gleich wie 030 (`-force_load` der AgoraRtcWrapper-Binary gegen das fehlende Iris-Symbol). Nur iOS-Bauweg - Android unveraendert.
+
+## 00.001.030
+- FIX iOS Live-Sprechen (Ursache gefunden via iPhone-Geräte-Log am PC): Die App stürzte beim Agora-Init ab – `Failed to lookup symbol 'Iris_InitDartApiDL': dlsym(RTLD_DEFAULT, ...) symbol not found`. Grund: `use_frameworks! :linkage => :static` bindet Agora statisch ein, wodurch das nur zur Laufzeit gesuchte Iris-Symbol (in AgoraRtcWrapper) nicht in die App-Binary gelangte. FIX im ios/Podfile: `post_install` ergänzt `-force_load` für die AgoraRtcWrapper-Binary (offizielle Agora-Empfehlung), Pfad wird automatisch aus den Pods ermittelt (geräte-Slice ios-arm64). Damit bleibt das Symbol erhalten und der Kanal-Beitritt läuft. Nur iOS-Bauweg – Android unverändert. Wirkt ab dem nächsten TestFlight-Build.
+
+## 00.001.029
+- DIAGNOSE iOS-Verbindung: Auf dem iPhone schließt der Agora-Kanal-Beitritt nicht ab (Token kommt sauber, aber „Verbinde…" hängt). Eingebaut: (1) Agora-Fehler/Status werden festgehalten und nach 12 s ohne Beitritt als Klartext auf dem „Verbinde…"-Bildschirm angezeigt; (2) bei endgültigem Agora-„failed" sofortige Fehleranzeige mit Grund; (3) „Verlassen" reagiert jetzt immer (6-s-Zeitlimit beim Aufräumen), auch wenn der Beitritt hängt. Dient dazu, die genaue Ursache des iOS-Beitritts-Problems sichtbar zu machen. Android unverändert.
+
+## 00.001.028
+- FIX iOS-Mikrofon: `permission_handler`-Compile-Flag `PERMISSION_MICROPHONE=1` im ios/Podfile ergänzt. Ohne dieses Flag zeigte iOS beim Sprechen NIE den Mikrofon-System-Dialog (die Anfrage kam sofort als „abgelehnt" zurück), die App erschien nicht unter Einstellungen > Datenschutz > Mikrofon und Live-Sprechen war auf dem iPhone unmöglich. Nur iOS – Android unverändert. Wirkt ab dem nächsten TestFlight-Build.
+
+## 00.001.027
+- iOS: Export-Compliance dauerhaft hinterlegt (`ITSAppUsesNonExemptEncryption = false` in Info.plist). Grevo nutzt nur Standard-HTTPS/TLS – damit fragt TestFlight/App Store die Verschlüsselungs-Compliance bei künftigen Builds nicht mehr ab. Keine funktionale Änderung.
+
+## 00.001.026
+- iOS-Signierung **dauerhaft** gemacht: Distributions-Zertifikat „grevo_dist" einmalig in Codemagic erzeugt/gespeichert; codemagic.yaml nutzt jetzt den `ios_signing`-Block (distribution_type app_store), der Zertifikat + Profil automatisch holt und wiederverwendet. Vorher wurde pro Build ein neues Apple-Zertifikat erstellt → Apple-2er/3er-Limit → Signier-Fehler. Nur iOS-Bauweg – keine Änderung am Android-Verhalten.
+
+## 00.001.025
+- iOS-Build (Codemagic): **Swift Package Manager abgeschaltet** (`flutter config --no-enable-swift-package-manager`). Das neuere Flutter-stable zog Agora/Firebase über SPM, und die SPM-Variante von agora_rtc_engine 6.5.4 hat einen kaputten Header (`AgoraRtcWrapper/AgoraPIPController.h` nicht gefunden) → Build-Abbruch beim Archivieren. Mit CocoaPods (statt SPM) sind die Agora-Header korrekt und das eigene Podfile (00.001.024) greift. Nur iOS-Bauweg – keine Änderung am Android-Verhalten.
+
+## 00.001.024
+- iOS-Build (Codemagic): Eigenes `ios/Podfile` mit `use_frameworks! :linkage => :static` (Agora-Empfehlung) ergänzt, CocoaPods mit `--repo-update` (frische Agora-/Iris-Pods, behebt fehlenden Header `AgoraRtcWrapper/AgoraPIPController.h` beim Archivieren) und IPA-Build mit `--no-tree-shake-icons` (verhindert das Wegstrippen der Agora-Iris-Symbole). Nur iOS-Bauweg – keine Änderung am Android-Verhalten.
+
+## 00.001.023
+- iOS-Vorbereitung: **Hintergrund-Audio-Modus** (`UIBackgroundModes: audio`) ergänzt, damit das Sprechen auf dem iPhone auch bei gesperrtem Bildschirm / im Hintergrund weiterläuft (iOS-Pendant zum Android-Vordergrunddienst). Nur iOS – keine Änderung für Android. Wird mit dem ersten iOS-Build (Codemagic/TestFlight) aktiv.
+
 ## 00.001.022
 - FIX: Absturz auf älteren **32-bit-Geräten** (z. B. manche Tablets) behoben. Die Wake-Word-Erkennung (sherpa-onnx) ist auf 32-bit-ARM technisch nicht lauffähig (stürzte beim Laden des Modells ab) und wird dort jetzt automatisch deaktiviert – die App läuft normal, „connect" geht per Knopf statt per Sprache. Auf 64-bit-Geräten unverändert mit Sprachwort.
 
@@ -66,9 +112,4 @@ Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fe
 - Testdurchlauf des automatischen Build-/Installations-Wegs (pub get → Release-APK → Gerät). Keine inhaltliche Änderung; dient nur dazu, die neue Versionsnummer am Handy sichtbar zu bestätigen.
 
 ## 00.001.002
-- Fix Live-Bereich: „X spricht"-Anzeige flackerte weg, weil Agoras lokale Lautstärke-Meldung die Sprecherliste leerte – jetzt steuert nur die Remote-Meldung die Anzeige.
-- Fix Live-Bereich: Namen verschwanden, wenn ein Gerät in den Hintergrund ging (Bildschirm aus). Namensliste wird jetzt zwischengespeichert und erst entfernt, wenn Agora die Person wirklich als offline meldet.
-
-## 00.001.001
-- Erste Versionierung; Versionsbalken unten auf jeder Maske eingeführt.
-- Sammelstand der bis dahin uncommitteten Tagesarbeit: Privatmodus-Fix (gleichzeitiger Start), gesprochene Ansagen (Privat-Modus / -aus, Gruppe beigetreten/verlassen) mit weiblicher/männlicher Stimme und An/Aus im Profil, Android-Hintergrund-Service (Mikro bei aus-Bildschirm), Kurzanleitung aktualisiert.
+- Fix Live-Bereich: „X spricht"-Anzeige flac
