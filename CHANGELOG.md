@@ -3,6 +3,9 @@
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
+## 01.001.005
+- FIX (Abrechnung): Doppelzählung der Verbindungsminuten behoben. Seit 01.001.004 liefert der Agora-Webhook echte Leave-Events (104) und verbucht die Zeit serverseitig. Die zusätzliche app-seitige Minuten-Meldung aus 00.001.018 (damals nur Fallback) ist jetzt deaktiviert, sonst wäre jede Tour doppelt gezählt worden. Der Webhook ist alleinige Abrechnungsquelle (zuverlässig auch bei App-Absturz, da Agora das Verbindungsende per Timeout meldet). Keine sichtbare Funktionsänderung. Android + iOS.
+
 ## 01.001.004
 - FIX (Abrechnung/Webhook): Agora-Sprachkanäle nutzen jetzt das Profil **LiveBroadcasting** statt Communication. Grund: Agora-Support (Ticket #11991) hat bestätigt, dass die RTC-Channel-Event-Callbacks 103 (Beitritt) / 104 (Verlassen) / 112 NUR im LiveBroadcasting-Profil ausgelöst werden – im Communication-Profil kamen nie echte Events am Webhook an. Rolle bleibt Broadcaster, am Sprechverhalten ändert sich nichts. Damit kann die serverseitige Minutenverbuchung (agora-webhook) endlich echte Sessions zählen. Android + iOS.
 
