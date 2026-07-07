@@ -1,3 +1,8 @@
+## 01.001.071 (07.07.2026)
+- Kartenkacheln neu von Stadia Maps (EU-Server), Stile Standard/Gelaende/Satellit bis Zoom 20.
+- Info-Knopf (i) neben dem Kompass zeigt die Kartenquellen.
+- Offline-Karten: Cache-Technik verbessert; beim ersten Start wird der alte Kachel-Cache einmalig geleert (Offline-Gebiete neu laden).
+- 067: Freundlicher Offline-Hinweis im Touren-Blatt.
 ## 01.001.010
 - FIX: Beendet der Sponsor sein Sponsoring im Gruppen-Detail (oder ohne in der Sprechrunde zu sein), merken es jetzt ALLE Verbundenen zuverlaessig (Supabase-Realtime) und werden gefragt.
 - FIX: Nach dem Verlassen der Sprechrunde wird die Gruppen-Detailseite neu geladen (kein veraltetes Bezahlt von... mehr). Android + iOS.
