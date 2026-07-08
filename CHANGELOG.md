@@ -1,3 +1,27 @@
+## 01.001.081 - 08.07.2026
+
+Grosses Navi- und Design-Update (Erkenntnisse aus zwei Fahrrad-Feldtests vom 08.07.).
+
+**Navi**
+- Wegpunkt-Routen laufen jetzt zuverlässig durch – kein Abschalten mehr am 1. Wegpunkt
+- Positionspfeil „klebt" auf der Route, zeigt in Fahrtrichtung und läuft synchron zur echten Position (GPS-Verzögerung wird ausgeglichen – Ansagen kommen nicht mehr zu spät)
+- „Folgen Sie der Strasse für X Kilometer" jetzt auch beim Start und nach jeder Neuberechnung
+- Kleine Schlenker (z.B. Radstreifen ↔ Trottoir-Radweg) werden sanft als „Leicht links/rechts halten" angesagt statt als volles Abbiegen
+- Fahrzeugart-Kontrolle vor dem Start („Mit Fahrrad starten?" – Ändern/Starten)
+- Neustart mitten auf der Runde: bereits passierte Wegpunkte werden erkannt, die Führung setzt beim nächsten Punkt in Fahrtrichtung fort
+- „Zurück zum Start – gleicher Weg": nummerierte blaue Rückkehrpunkte (27, 28, 29 …)
+- Ansage-Verstärkung (Boost) bis 400 % – Solo-Ansagen so laut wie im Sprechfunk
+- Fahrt-Aufzeichnung speichert sich am Ziel automatisch mit Namen – kein Dialog mehr während der Fahrt (Teilen optional per Einblendung)
+- Ansagen laufen in einer Warteschlange und schneiden sich nicht mehr gegenseitig ab
+
+**Design**
+- Neuer Standard-Farbmodus **GREVO**: das dunkle Design der Startseite (Dunkelblau, hellblaue Schrift, Knöpfe mit Cyan-Rand) auf allen Masken
+- Farbwahl neu als Liste mit Farbpunkt + Name (GREVO, Pink, Blau, Grün, Orange, Violett, Rot); Hell/Dunkel wirkt bei den anderen Farben
+- Poppins als App-Schrift
+- GREVO-Schnecken-Avatar (Logo) an erster Stelle für Benutzer und Gruppen
+
+**Installation:** `grevo-01.001.081.apk` für aktuelle Geräte · `grevo-01.001.081-altes-geraet.apk` für ältere/32-bit-Geräte.
+
 ## 01.001.071 (07.07.2026)
 - Kartenkacheln neu von Stadia Maps (EU-Server), Stile Standard/Gelaende/Satellit bis Zoom 20.
 - Info-Knopf (i) neben dem Kompass zeigt die Kartenquellen.
