@@ -1,3 +1,18 @@
+## 01.001.085 - 13.07.2026
+
+Navi-Update nach dem ersten E-Bike-Feldtest (Uznach, 13.07.).
+
+**Navi**
+- Verfahren wird jetzt schnell erkannt – auch wenn der falsche Weg fast parallel zur Route verläuft (vorher stand die Führung dort minutenlang still). Die Rest-Kilometer bleiben eingefroren, bis die neue Route steht
+- Roter Blink-Pfeil, solange du neben der Route bist – wieder blau, sobald du zurück auf der Route bist
+- „Ziel erreicht" kommt jetzt auch, wenn der Zielpunkt z.B. hinter einem Gebäude liegt (Erkennung zusätzlich per Luftlinie)
+- Vor jeder Abbiegung zoomt die Karte automatisch ganz nah heran, damit alle Nebenstrassen genau erkennbar sind – danach wieder Tempo-Zoom
+- Die Karten-Ausrichtung (Fahrtrichtung oben / Norden oben) wird gespeichert und bleibt erhalten – auch nach Routen-Neuladen und App-Neustart
+- Die Meldung „Aufzeichnung gespeichert" verschwindet jetzt zuverlässig von selbst (ohne Teilen-Knopf; Umbenennen/Teilen kommt später gesammelt in eine Touren-Übersicht)
+- Ansage-Kosmetik: „Ziel erreicht" ohne Klammerzusatz
+
+**Installation:** `grevo-01.001.085.apk` für aktuelle Geräte · `grevo-01.001.085-altes-geraet.apk` für ältere/32-bit-Geräte.
+
 ## 01.001.081 - 08.07.2026
 
 Grosses Navi- und Design-Update (Erkenntnisse aus zwei Fahrrad-Feldtests vom 08.07.).
