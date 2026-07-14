@@ -1,3 +1,18 @@
+## 01.001.086 (14.07.2026)
+
+Navi-Update aus dem E-Bike-Feldtest vom 14.07.2026:
+
+- **Weiches Zwischenziel:** An einem Zwischenziel muss man nicht mehr exakt vorbeifahren – einmal in der Nähe (oder weiträumig umfahren) genügt: Ansage „Zwischenziel übersprungen", sofortige Neuberechnung zum nächsten Ziel. Kein „Rückwärts-Rerouting" mehr.
+- **Neuberechnung in Fahrtrichtung:** Reroutes starten jetzt in die Richtung, in die man fährt (nicht mehr rückwärts).
+- **Drosselung mit Backoff:** Neuberechnungen frühestens alle 10 s / 50 m – ruhigere Führung und geschontes Routen-Kontingent.
+- **Serpentinen-Schutz:** kein Fehlalarm der Off-Route-Erkennung mehr auf Haarnadelkurven.
+- **Störungs-Hinweis:** Ist der Routendienst nicht erreichbar, sagt die App das einmal an und zeigt es im Panel, statt still rot zu blinken.
+- **Reroute-Logdatei** für die Testauswertung (navi_reroute_log.txt).
+- **Server (wirkt sofort, auch für ältere App-Versionen):** Ausweich-Router springt jetzt auch bei „Punkt nicht routbar" ein (vorher bis 5 Minuten ohne Route), kürzere Reroute-Zeitlimits, ORS-Ausfall-Merker, Radprofil des Ausweich-Routers angeglichen.
+
+Dateien: `grevo-01.001.086.apk` (normale Geräte, arm64) · `grevo-01.001.086-altes-geraet.apk` (ältere 32-bit-Geräte) · 3 aktuelle PDFs (Kurzanleitung, Projektdokument, Abomodell).
+
+
 ## 01.001.085 - 13.07.2026
 
 Navi-Update nach dem ersten E-Bike-Feldtest (Uznach, 13.07.).
