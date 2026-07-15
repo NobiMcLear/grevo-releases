@@ -1,3 +1,8 @@
+## 01.001.093 (15.07.2026)
+- Navi: Ansage-Timing ueberarbeitet - **Meter-Countdown im Anweisungs-Banner** (zaehlt live runter), **Kombi-Ansage bei dicht folgenden Abbiegungen** ("... - danach sofort: rechts auf ..." + zweite Banner-Zeile), Banner wechselt erst NACH der gefahrenen Abbiegung (an der Kreuzung steht immer die richtige Anweisung), Vorwarnung zeitbasiert (~20 s vor dem Manoever), "Ziel erreicht" kommt erst, wenn wirklich fast da.
+- NEU: **Meine Orte** - Heim- und Arbeitsadresse im Profil festlegen; im Navi setzen die Knoepfe **Heim/Arbeit** das Ziel mit einem Tipp.
+- NEU: **Passwort aendern** direkt im Profil.
+
 ## 01.001.086 (14.07.2026)
 
 Navi-Update aus dem E-Bike-Feldtest vom 14.07.2026:
