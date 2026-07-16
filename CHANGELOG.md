@@ -1,3 +1,9 @@
+## 01.001.105 (16.07.2026)
+- Navi: Neuberechnung startet immer in FAHRTRICHTUNG (kein Zurueck-Wenden mehr); Ansage 'Route wird neu berechnet' entfernt; Karte dreht nur noch nach Fahrtrichtung; Pfeil bei Abweichung statisch rot; Banner friert waehrend der Suche ein.
+- Navi: bewusst ausgelassene Zwischenziele werden nach 3 Neuberechnungen automatisch uebersprungen; Boost-Regler zeigt 0-100 %.
+- Sprechfunk (Test): QS-Aufnahme (zeichnet das Gehoerte auf, teilbar) + Schalter 'Stark = Aggressiv' fuer den Geraeusch-Vergleich.
+- Enthaelt v094-104: zweistufige Sprachkommandos 'grevo ...' (de+en), Meine Orte (Heim/Arbeit), Ansage-Timing-Paket, Reroute-Log teilbar.
+
 ## 01.001.093 (15.07.2026)
 - Navi: Ansage-Timing ueberarbeitet - **Meter-Countdown im Anweisungs-Banner** (zaehlt live runter), **Kombi-Ansage bei dicht folgenden Abbiegungen** ("... - danach sofort: rechts auf ..." + zweite Banner-Zeile), Banner wechselt erst NACH der gefahrenen Abbiegung (an der Kreuzung steht immer die richtige Anweisung), Vorwarnung zeitbasiert (~20 s vor dem Manoever), "Ziel erreicht" kommt erst, wenn wirklich fast da.
 - NEU: **Meine Orte** - Heim- und Arbeitsadresse im Profil festlegen; im Navi setzen die Knoepfe **Heim/Arbeit** das Ziel mit einem Tipp.
