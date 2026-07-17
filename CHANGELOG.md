@@ -1,3 +1,7 @@
+## 01.001.106
+- NEU: **Unterbrochene Fahrt fortsetzen** - nach einer Pause fragt das Navi beim naechsten Oeffnen (juenger als 6 h, naeher als 500 m) 'Unterbrochene Fahrt von HH:MM fortsetzen?'; die Aufzeichnung laeuft in derselben Datei weiter.
+- NEU: **Abseits-Banner** - bleibt die Route laenger als ~10 s verlassen ohne Neuberechnung, zeigt das Banner 'Abseits der Route - Ziel x,x km' statt der eingefrorenen alten Anweisung.
+
 ## 01.001.105 (16.07.2026)
 - Navi: Neuberechnung startet immer in FAHRTRICHTUNG (kein Zurueck-Wenden mehr); Ansage 'Route wird neu berechnet' entfernt; Karte dreht nur noch nach Fahrtrichtung; Pfeil bei Abweichung statisch rot; Banner friert waehrend der Suche ein.
 - Navi: bewusst ausgelassene Zwischenziele werden nach 3 Neuberechnungen automatisch uebersprungen; Boost-Regler zeigt 0-100 %.
