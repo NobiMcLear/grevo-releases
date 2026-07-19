@@ -1,3 +1,10 @@
+## 01.001.107
+- Routing-Zeitlimit: haengt eine Neuberechnung im Funkloch, bricht die App nach 12 s ab und rechnet offline weiter.
+- 'Fahrt fortsetzen?' auch beim direkten Neustart im Navi.
+- Hoehenmeter realistischer, reine Fahrzeit ohne Stillstand.
+- Kein Reroute im Stand.
+- Testmodus fuer Tester: automatische Diagnosedaten am Fahrtende (unsichtbar, pseudonym).
+
 ## 01.001.106
 - NEU: **Unterbrochene Fahrt fortsetzen** - nach einer Pause fragt das Navi beim naechsten Oeffnen (juenger als 6 h, naeher als 500 m) 'Unterbrochene Fahrt von HH:MM fortsetzen?'; die Aufzeichnung laeuft in derselben Datei weiter.
 - NEU: **Abseits-Banner** - bleibt die Route laenger als ~10 s verlassen ohne Neuberechnung, zeigt das Banner 'Abseits der Route - Ziel x,x km' statt der eingefrorenen alten Anweisung.
