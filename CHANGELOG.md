@@ -1,3 +1,8 @@
+## 01.001.108
+- Schweizerkreuz + «Swiss Made» auf der Startmaske.
+- Abgeschnittene Kopfzeilen-Titel verkleinern sich jetzt automatisch (Hinweis Thomas).
+- Anmelde-IP-Erfassung fuer das Admin-Dashboard (unsichtbar in der App).
+
 ## 01.001.107
 - Routing-Zeitlimit: haengt eine Neuberechnung im Funkloch, bricht die App nach 12 s ab und rechnet offline weiter.
 - 'Fahrt fortsetzen?' auch beim direkten Neustart im Navi.
