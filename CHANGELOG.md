@@ -1,3 +1,8 @@
+## 01.001.109
+- Navi und Touren sind jetzt Abo-Leistungen (Pro/Mega oder Tester-Konto); Free-Konten sehen einen Abo-Hinweis (5 Sprachen). Tester sind NICHT betroffen.
+- Routing und Adresssuche zusaetzlich serverseitig geschuetzt.
+- «Aeltere laden» in der Touren-Uebersicht: Aufzeichnungen in 15er-Bloecken, schnellerer Aufbau.
+
 ## 01.001.108
 - Schweizerkreuz + «Swiss Made» auf der Startmaske.
 - Abgeschnittene Kopfzeilen-Titel verkleinern sich jetzt automatisch (Hinweis Thomas).
