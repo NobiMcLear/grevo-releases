@@ -1,3 +1,8 @@
+## 01.001.111 (23.07.2026)
+- Ruhigere Neuberechnung beim bewussten Abseits-Fahren (R9): kein Dauerrechnen mehr, Banner «Abseits der Route · Ziel x km»; Zurücklenken rechnet sofort. Keine Neuberechnung bei ungenauem GPS-Signal (>50 m).
+- Fahrprofil-Merker: das zuletzt benutzte Profil (Rad/E-Bike/…) ist bei Planung und Start-Dialog vorgewählt.
+- Beim Gruppenbeitritt wird die Medien-Lautstärke nicht mehr automatisch auf Maximum gestellt.
+
 ## 01.001.110
 - Funk-Fix (Feldtest 22.07.): Beim Wegwischen der App blieb die Sprechverbindung unsichtbar offen (Mikrofon blockiert, doppelte Ansagen, schlechter Ton nach Neustart). Die Verbindung wird jetzt beim Beenden sauber getrennt und beim Start aufgeraeumt.
 - Abo-Seite: Start-Paket (CHF 3.- einmalig, 300 Sprechminuten + volles Navi, 30 Tage) ersetzt Free. Kauf-Knoepfe folgen mit den Store-Produkten. Tester sind NICHT betroffen.
