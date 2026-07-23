@@ -1,3 +1,6 @@
+## 01.001.115 (23.07.2026)
+- Sichtbare Lausch-Anzeige: 'hoere auf grevo...-Kommandos' erscheint jetzt auch waehrend der Verbindung - nur wenn die Erkennung wirklich Audio bekommt (Diagnose Sprachkommandos).
+
 ## 01.001.114 (23.07.2026)
 - WICHTIG: Weckwort 'grevo' wurde bei deutscher Aussprache nicht erkannt (alle Sprachkommandos ohne Reaktion) - behoben mit zusaetzlicher Erkennungs-Schreibweise und feineren Schwellen. Bitte Sprachkommandos neu testen.
 
