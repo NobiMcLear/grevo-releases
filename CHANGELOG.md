@@ -1,3 +1,6 @@
+## 01.001.114 (23.07.2026)
+- WICHTIG: Weckwort 'grevo' wurde bei deutscher Aussprache nicht erkannt (alle Sprachkommandos ohne Reaktion) - behoben mit zusaetzlicher Erkennungs-Schreibweise und feineren Schwellen. Bitte Sprachkommandos neu testen.
+
 ## 01.001.113 (23.07.2026)
 - Geteilte Ansicht: 2/3 der Flaeche fuers Navi, 1/3 fuer den Sprech-Status (Feldtest-Feinschliff).
 - Behoben: Weganzeige sass unter der System-Statusleiste (Uhr/Akku).
