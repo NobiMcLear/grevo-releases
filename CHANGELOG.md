@@ -1,3 +1,7 @@
+## 01.001.113 (23.07.2026)
+- Geteilte Ansicht: 2/3 der Flaeche fuers Navi, 1/3 fuer den Sprech-Status (Feldtest-Feinschliff).
+- Behoben: Weganzeige sass unter der System-Statusleiste (Uhr/Akku).
+
 ## 01.001.112 (23.07.2026)
 - Geteilte Ansicht (Kombi) neu: Navi OBEN, Sprechen unten - reine Fahr-Ansicht ohne Knoepfe (nur die Sparmodus-Taste). Bedienen im Vollbild ueber die untere Leiste.
 - Weganzeige (naechster Abbiegepunkt) in WEISS - besser lesbar am Lenker.
