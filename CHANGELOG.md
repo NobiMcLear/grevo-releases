@@ -1,3 +1,8 @@
+## 01.001.112 (23.07.2026)
+- Geteilte Ansicht (Kombi) neu: Navi OBEN, Sprechen unten - reine Fahr-Ansicht ohne Knoepfe (nur die Sparmodus-Taste). Bedienen im Vollbild ueber die untere Leiste.
+- Weganzeige (naechster Abbiegepunkt) in WEISS - besser lesbar am Lenker.
+- NEU Sprachkommando 'grevo spar': schickt die ganze Gruppe in den Sparmodus - funktioniert auch mitten im Gespraech (Wake-Word hoert neu auf dem Funk-Mikrofon mit; 64-bit-Geraete).
+
 ## 01.001.111 (23.07.2026)
 - Ruhigere Neuberechnung beim bewussten Abseits-Fahren (R9): kein Dauerrechnen mehr, Banner «Abseits der Route · Ziel x km»; Zurücklenken rechnet sofort. Keine Neuberechnung bei ungenauem GPS-Signal (>50 m).
 - Fahrprofil-Merker: das zuletzt benutzte Profil (Rad/E-Bike/…) ist bei Planung und Start-Dialog vorgewählt.
