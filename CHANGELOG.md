@@ -1,3 +1,9 @@
+## 01.001.118 (25.07.2026)
+- Funkloch-Fix: Der Wieder-Beitritt gibt nie mehr auf - auch nach 20+ Minuten ohne Netz verbindet die App automatisch wieder, sobald Netz da ist (Feldtest Kaltbrunn: 17-Minuten-Funkloch).
+- Neu: Aktuelle Hoehe (m ue. M.) neben dem Tempo in der Fahr-Ansicht (aufs Gelaende geeicht).
+- Diagnose-Modus 'Reiner Sprachkanal' zeigt jetzt live Netz-Messwerte (Laufzeit zum Server, Paketverlust) - hilft bei Verzoegerungen und Stoergeraeuschen.
+- Beitritts-Watchdog heilt sich selbst: haengt der Beitritt, wird einmal still neu aufgebaut; kein Falschalarm mehr waehrend des Echo-Tests.
+
 ## 01.001.115 (23.07.2026)
 - Sichtbare Lausch-Anzeige: 'hoere auf grevo...-Kommandos' erscheint jetzt auch waehrend der Verbindung - nur wenn die Erkennung wirklich Audio bekommt (Diagnose Sprachkommandos).
 
