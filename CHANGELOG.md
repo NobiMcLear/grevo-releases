@@ -1,3 +1,12 @@
+## 01.001.133 (28.07.2026)
+- Sprachqualitaet: voller Stimmklang (48-kHz-Vollband) ohne Geraeuschunterdrueckung; mit NS Mittel/Stark automatisch bewaehrtes Sprachband
+- Echo-Test NEU: 5-s-Aufnahme/Wiedergabe-Zyklus auf dem Kopfhoerer (statt Telefon-Lautsprecher), Aufnahmen als eine Datei teilbar
+- Diagnose-Schalter «Niedrige Latenz (Test)» (Chorus-Szenario) gegen den Sprachversatz
+- iOS: Lautstaerkebalken bei Tastendruck wieder sichtbar
+- «grevo»-Sprachkommandos: auf echte Aussprache abgestimmt + fluessiges «grevo connect» ohne Kunstpause
+- Lautstaerke springt beim Gruppen-Beitritt nicht mehr auf voll; letztes Fahrprofil ueberall vorgewaehlt
+- Navi: Test-Telemetrie ausfallsicher, veraltete Fehlermeldung nach Ankunft behoben, Karten-Kachelfehler werden gezaehlt
+
 ## 01.001.118 (25.07.2026)
 - Funkloch-Fix: Der Wieder-Beitritt gibt nie mehr auf - auch nach 20+ Minuten ohne Netz verbindet die App automatisch wieder, sobald Netz da ist (Feldtest Kaltbrunn: 17-Minuten-Funkloch).
 - Neu: Aktuelle Hoehe (m ue. M.) neben dem Tempo in der Fahr-Ansicht (aufs Gelaende geeicht).
