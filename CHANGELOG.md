@@ -1,5 +1,11 @@
 # Grevo – Änderungsliste
 
+## 01.001.138 - Verkaufsstand (10.08.2026)
+- Alle Test-Schalter entfernt (QS-Aufnahme, Reiner Sprachkanal, Niedrige Latenz, Stark=Aggressiv, Wind-Filter); Geraeuschunterdrueckung Aus/Mittel/Stark bleibt.
+- Echo-Modus nur noch fuer Tester, neu 10 s Zyklus, Rueckton-Fix (Feldtest 10.08.).
+- E-Mail-Adresse auf Startmaske + Profil sichtbar (mehrere Konten unterscheidbar).
+- Fahrtrichtung-oben: Pfeil im unteren Drittel, mehr Sicht voraus, auch in der Geteilt-Ansicht.
+
 Schema der Version: **Hauptrelease.Versionszähler.Iteration** (z.B. 00.001.001).
 Iteration steigt bei jedem Änderungsdurchlauf, der Versionszähler bei jeder fertigen Funktion.
 
