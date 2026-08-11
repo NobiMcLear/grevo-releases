@@ -1,5 +1,12 @@
 # Grevo – Änderungsliste
 
+## 01.001.140 (11.08.2026)
+- Heimweg-Modus: Beim Verlassen der Route kommt jetzt die Ansage 'Route verlassen ...' plus Entwarnung, und die Route wird automatisch neu berechnet (bisher blieb die App still).
+- Der Reroute rechnet nur den Hinweg-Rest neu und haengt den bereits berechneten Rueckweg wieder an - genau ein Routing-Aufruf.
+- Rest-Distanz/Ankunftszeit springen nicht mehr auf den Rueckweg; nach 3 Minuten abseits der Route wird die Luftlinie zum Ziel gezeigt.
+- Fahransicht: Kennzeichen 'Heimweg' mit Haus-Symbol.
+- Navigation und Aufzeichnung laufen auch ohne Sprechfunk im Hintergrund zuverlaessig weiter (Bildschirm aus / Handy in der Tasche).
+
 ## 01.001.138 - Verkaufsstand (10.08.2026)
 - Alle Test-Schalter entfernt (QS-Aufnahme, Reiner Sprachkanal, Niedrige Latenz, Stark=Aggressiv, Wind-Filter); Geraeuschunterdrueckung Aus/Mittel/Stark bleibt.
 - Echo-Modus nur noch fuer Tester, neu 10 s Zyklus, Rueckton-Fix (Feldtest 10.08.).
