@@ -1,5 +1,12 @@
 # Grevo – Änderungsliste
 
+## 01.001.141 - Windfilter zurueck (12.08.2026)
+- Wind-Filter (Sende-Filter gegen Wind-Poltern) wieder fest eingebaut - immer aktiv, unabhaengig von der Geraeuschunterdrueckung (war in v138 versehentlich entfernt).
+- grevo-Spracherkennung filtert Fahrtwind neu vor der Erkennung heraus.
+- Fortsetzen-Frage erscheint nicht mehr faelschlich nach einer beendeten Fahrt; beim Fortsetzen wird der Wegpunkt-Fortschritt uebernommen.
+- Ankunftserkennung repariert; manuelles Beenden kurz vor dem Ziel (unter 100 m) zaehlt als Ankunft.
+- Fahrt-Auswertung ueberlebt das Wegwischen der App (wird beim naechsten Start nachgereicht).
+
 ## 01.001.140 (11.08.2026)
 - Heimweg-Modus: Beim Verlassen der Route kommt jetzt die Ansage 'Route verlassen ...' plus Entwarnung, und die Route wird automatisch neu berechnet (bisher blieb die App still).
 - Der Reroute rechnet nur den Hinweg-Rest neu und haengt den bereits berechneten Rueckweg wieder an - genau ein Routing-Aufruf.
