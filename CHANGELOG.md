@@ -1,5 +1,10 @@
 # Grevo – Änderungsliste
 
+## 01.001.143 - Navi-Robustheit + staerkerer Windfilter (13.08.2026)
+- Fuenf stille Navi-Fehlerpfade behoben: Standort-Strom heilt sich nach Ausfall selbst, Fortsetzen-Angebot und Fahrt-Aufzeichnung gehen nicht mehr unbemerkt verloren.
+- Weniger unnoetige Routen-Neuberechnungen bei laengerem Abseits-Fahren (Reroute-Haeufung gebremst).
+- Windfilter deutlich staerker: echtes Hochpass-Filter direkt im Sendeweg (nativ) - Wind-Poltern wird um ein Vielfaches staerker gedaempft; die grevo-Spracherkennung profitiert mit.
+
 ## 01.001.141 - Windfilter zurueck (12.08.2026)
 - Wind-Filter (Sende-Filter gegen Wind-Poltern) wieder fest eingebaut - immer aktiv, unabhaengig von der Geraeuschunterdrueckung (war in v138 versehentlich entfernt).
 - grevo-Spracherkennung filtert Fahrtwind neu vor der Erkennung heraus.
