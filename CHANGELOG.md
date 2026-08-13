@@ -1,5 +1,10 @@
 # Grevo – Änderungsliste
 
+## 01.001.144 - Wind-Hochpass-Nachbesserung (13.08.2026)
+- S-Laute sauber: Der Sende-Windfilter arbeitet mit Headroom vor der Begrenzung - das Kratzen/Uebersteuern bei scharfen S-Lauten ist weg (Sendepegel minimal leiser).
+- Windfilter an die Geraeuschunterdrueckung gekoppelt: Filter nur noch bei Stufe Mittel/Stark aktiv; bei Aus voller, unverfaelschter Klang. Merksatz: bei Ruhe voller Klang - Windschutz zusammen mit Mittel/Stark. Bei Windfahrt mindestens Mittel einschalten.
+- Die "grevo"-Spracherkennung filtert den Fahrtwind unabhaengig davon weiterhin immer.
+
 ## 01.001.143 - Navi-Robustheit + staerkerer Windfilter (13.08.2026)
 - Fuenf stille Navi-Fehlerpfade behoben: Standort-Strom heilt sich nach Ausfall selbst, Fortsetzen-Angebot und Fahrt-Aufzeichnung gehen nicht mehr unbemerkt verloren.
 - Weniger unnoetige Routen-Neuberechnungen bei laengerem Abseits-Fahren (Reroute-Haeufung gebremst).
