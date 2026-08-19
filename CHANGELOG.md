@@ -1,5 +1,10 @@
 # Grevo – Änderungsliste
 
+## 01.001.146 - Wind-Messung + anpassender Windfilter (19.08.2026)
+- Wind-Messung (nur Tester): sekundengenaue Clipping-/Pegel-Messung im Sendeweg, Live-Ampel im Diagnose-Bereich, Werte in der Tester-Telemetrie (nur Zahlen, keine Audio-Inhalte).
+- Anpassender Windfilter: Sende-Hochpass gleitet automatisch zwischen sanft (ruhige Fahrt, voller Klang) und stark (Windfahrt) - ohne Knacken.
+- Stabilere Lautstaerke bei Windboeen: automatische Pegel-Regelung bei Geraeuschunterdrueckung Mittel/Stark abgeschaltet (vorher drueckte eine Boe die Stimme ca. 2 s leise).
+
 ## 01.001.144 - Wind-Hochpass-Nachbesserung (13.08.2026)
 - S-Laute sauber: Der Sende-Windfilter arbeitet mit Headroom vor der Begrenzung - das Kratzen/Uebersteuern bei scharfen S-Lauten ist weg (Sendepegel minimal leiser).
 - Windfilter an die Geraeuschunterdrueckung gekoppelt: Filter nur noch bei Stufe Mittel/Stark aktiv; bei Aus voller, unverfaelschter Klang. Merksatz: bei Ruhe voller Klang - Windschutz zusammen mit Mittel/Stark. Bei Windfahrt mindestens Mittel einschalten.
