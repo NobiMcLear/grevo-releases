@@ -1,5 +1,9 @@
 # Grevo – Änderungsliste
 
+## 01.001.147 - Kopfhoerertyp-Auswahl + fahrt-bewusste Pegel-Automatik (20.08.2026)
+- Kopfhoerertyp-Auswahl: Die Startmaske fragt einmalig "Wie hoerst du unterwegs?" mit vier Bild-Kacheln (Knochenleitung, In-Ear/Buegel, Helm-Lautsprecher, Lauthoeren). Bluetooth-Kopfhoerer werden am Namen erkannt und vorbelegt ("Erkannt: Shokz OpenRun"); die Wahl wird pro Kopfhoerer gemerkt und ist auf der Startmaske jederzeit aenderbar. Der Windfilter stimmt sich damit auf den Kopfhoerertyp ab.
+- Fahrt-bewusste Pegel-Automatik: Bei erkannter Fahrt schaltet Grevo die automatische Verstaerkungsregelung ab (sie drueckte nach Windboeen die Stimme fuer Sekunden weg) und erinnert einmalig daran, die Geraeuschunterdrueckung "Mittel" einzuschalten - sie ist der Windschutz.
+- Diagnose/Telemetrie (Tester): Wind-Messung fuehrt jetzt Kopfhoerertyp + Geraetename mit; Filter- und AGC-Zustand eindeutig protokolliert.
 ## 01.001.146 - Wind-Messung + anpassender Windfilter (19.08.2026)
 - Wind-Messung (nur Tester): sekundengenaue Clipping-/Pegel-Messung im Sendeweg, Live-Ampel im Diagnose-Bereich, Werte in der Tester-Telemetrie (nur Zahlen, keine Audio-Inhalte).
 - Anpassender Windfilter: Sende-Hochpass gleitet automatisch zwischen sanft (ruhige Fahrt, voller Klang) und stark (Windfahrt) - ohne Knacken.
