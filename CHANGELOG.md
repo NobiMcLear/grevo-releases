@@ -1,5 +1,7 @@
 # Grevo – Änderungsliste
 
+## 01.001.148 - Kopfhoerer-Anzeige gross (20.08.2026)
+- Sichttest-Nachbesserung: Kopfhoerer-Anzeige auf der Startseite jetzt als grosses, gut lesbares Feld (grosse Skizze, helle Schrift, auch in der Sonne erkennbar); ganze Flaeche antippbar zum Aendern des Typs. In der Auswahl groessere Schrift und groesseres Haekchen.
 ## 01.001.147 - Kopfhoerertyp-Auswahl + fahrt-bewusste Pegel-Automatik (20.08.2026)
 - Kopfhoerertyp-Auswahl: Die Startmaske fragt einmalig "Wie hoerst du unterwegs?" mit vier Bild-Kacheln (Knochenleitung, In-Ear/Buegel, Helm-Lautsprecher, Lauthoeren). Bluetooth-Kopfhoerer werden am Namen erkannt und vorbelegt ("Erkannt: Shokz OpenRun"); die Wahl wird pro Kopfhoerer gemerkt und ist auf der Startmaske jederzeit aenderbar. Der Windfilter stimmt sich damit auf den Kopfhoerertyp ab.
 - Fahrt-bewusste Pegel-Automatik: Bei erkannter Fahrt schaltet Grevo die automatische Verstaerkungsregelung ab (sie drueckte nach Windboeen die Stimme fuer Sekunden weg) und erinnert einmalig daran, die Geraeuschunterdrueckung "Mittel" einzuschalten - sie ist der Windschutz.
