@@ -1,5 +1,10 @@
 # Grevo – Änderungsliste
 
+## 01.001.149 - iOS-Build abgesichert: Xcode 26.4 / Deployment-Target 15.0 (17.09.2026)
+- Grund: Codemagic zieht seit 14.09.2026 automatisch Xcode 27, das Deployment-Target 15 verlangt; Agora 6.5.4 ist dafuer noch nicht freigegeben.
+- Xcode in Codemagic fest auf 26.4 gepinnt, iOS-Deployment-Target ueberall auf 15.0 angehoben (Podfile, Xcode-Projekt).
+- Wirkung: iOS 13/14 werden nicht mehr unterstuetzt. Auf Android keine Funktionsaenderung, Build zieht nur aus Versionsgruenden mit.
+
 ## 01.001.148 - Kopfhoerer-Anzeige gross (20.08.2026)
 - Sichttest-Nachbesserung: Kopfhoerer-Anzeige auf der Startseite jetzt als grosses, gut lesbares Feld (grosse Skizze, helle Schrift, auch in der Sonne erkennbar); ganze Flaeche antippbar zum Aendern des Typs. In der Auswahl groessere Schrift und groesseres Haekchen.
 ## 01.001.147 - Kopfhoerertyp-Auswahl + fahrt-bewusste Pegel-Automatik (20.08.2026)
