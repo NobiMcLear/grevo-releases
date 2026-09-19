@@ -1,5 +1,12 @@
 # Grevo – Änderungsliste
 
+## 01.001.150 - GREVO Tourist: Fuehrungs-Modus als VORABVERSION (19.09.2026)
+- Nicht in den Stores. Vorabversion (Prerelease) nur fuer den Feldtest des Fuehrungs-Modus.
+- Neuer dritter Modus 'Tourist / Fuehrung': Guide sendet, Gaeste hoeren zu (Ein-Weg-Ton, Gast-Mikrofon nie aktiv).
+- Guide-Cockpit mit Codes, QR, Tonprobe, Zuhoererzahl, Guthaben in Std:Min und Rauswurf; Gast-Weg ohne Konto per QR oder Code.
+- Firmen-Konto mit gemeinsamem Guthaben, Paywall mit vier Zuhoererstunden-Bloecken, Abschluss mit Bewertung 1-5. Alles fuenfsprachig.
+- Noch offen: Store-Produkte fehlen (kein echter Kauf moeglich), Web-Teil erst auf staging.grevotools.com, Deep-Link-Dateien noch Platzhalter.
+
 ## 01.001.149 - iOS-Build abgesichert: Xcode 26.4 / Deployment-Target 15.0 (17.09.2026)
 - Grund: Codemagic zieht seit 14.09.2026 automatisch Xcode 27, das Deployment-Target 15 verlangt; Agora 6.5.4 ist dafuer noch nicht freigegeben.
 - Xcode in Codemagic fest auf 26.4 gepinnt, iOS-Deployment-Target ueberall auf 15.0 angehoben (Podfile, Xcode-Projekt).
