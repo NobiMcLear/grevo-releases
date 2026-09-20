@@ -1,5 +1,12 @@
 # Grevo – Änderungsliste
 
+## 01.001.151 - GREVO Tourist: Vorabversion 2 (20.09.2026)
+- Nicht in den Stores. Vorabversion (Prerelease) nur fuer den Feldtest des Fuehrungs-Modus.
+- Cockpit verlassen fragt nach ('Fuehrung laeuft weiter' / 'Fuehrung beenden'); Banner 'Fuehrung laeuft' auf der Startmaske.
+- Bewertung 1-5 geht neu wirklich ans Backend; Kulanz-Restzeit und Verrechnungssatz im Cockpit; Zuhoerer-Bildschirm erkennt das Ende der Fuehrung und bleibt wach.
+- Paywall laedt die Bloecke nach und benennt fehlende Produkte ehrlich; vier Erklaertexte zur Zuhoererstunde; Geraete-Kennung bei den Kontaktangaben; firmenweite Gast-Sperre; Staging-Host beim Deep-Link.
+- Noch offen: Tourist-Migration Phase 3 und neue Edge Functions sind nicht eingespielt - bis dahin meldet die Tonprobe einen Fehler (Rueckschritt gegenueber 01.001.150) und die Bewertung bleibt ohne Dank. Store-Produkte fehlen weiterhin, Web-Teil erst auf staging.grevotools.com, Deep-Link-Dateien noch Platzhalter.
+
 ## 01.001.150 - GREVO Tourist: Fuehrungs-Modus als VORABVERSION (19.09.2026)
 - Nicht in den Stores. Vorabversion (Prerelease) nur fuer den Feldtest des Fuehrungs-Modus.
 - Neuer dritter Modus 'Tourist / Fuehrung': Guide sendet, Gaeste hoeren zu (Ein-Weg-Ton, Gast-Mikrofon nie aktiv).
