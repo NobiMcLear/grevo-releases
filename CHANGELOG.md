@@ -1,5 +1,11 @@
 # Grevo – Änderungsliste
 
+## 01.001.152 - VOXPEERS: Umbenennung + Weckwort vox (23.09.2026)
+- Vorabversion, nicht in den Stores. App heisst neu voxpeers (Name, Symbol, Texte in 5 Sprachen, support@voxpeers.com).
+- Weckwort neu vox (vox lauter / leiser / connect / heim / spar).
+- Fuehrungs-QR neu voxpeers.com/t/<code>; alte grevotools.com-Codes bleiben gueltig.
+- Start-Paket CHF 4.50 inkl. 5 Zuhoererstunden Tourist-Test (30 Tage).
+
 ## 01.001.151 - GREVO Tourist: Vorabversion 2 (20.09.2026)
 - Nicht in den Stores. Vorabversion (Prerelease) nur fuer den Feldtest des Fuehrungs-Modus.
 - Cockpit verlassen fragt nach ('Fuehrung laeuft weiter' / 'Fuehrung beenden'); Banner 'Fuehrung laeuft' auf der Startmaske.
