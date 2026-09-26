@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.155 - Abo-Seite: Zusatzminuten und Tourist-Zuhoererstunden getrennt (26.09.2026)
+- Vorabversion, nicht in den Stores. Abo & Pakete zeigt 'Minuten dazukaufen' und neu getrennt 'VOXPEERS Tourist - Zuhoererstunden fuer Guides' (Mini 45 / Basis 100 / Plus 400 / Maxi 1200).
+- Kurzanleitung, Projektdokument und Abomodell frisch nachgefuehrt.
+
 ## 01.001.154 - VOXPEERS: Name gross (26.09.2026)
 - Vorabversion, nicht in den Stores. Unter dem App-Symbol steht jetzt VOXPEERS (gross) statt voxpeers; App-Titel in allen 5 Sprachen ebenso.
 - Kurzanleitung, Projektdokument und Abomodell frisch nachgefuehrt.
