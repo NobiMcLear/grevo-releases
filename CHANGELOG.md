@@ -1,4 +1,8 @@
-# Grevo – Änderungsliste
+# VOXPEERS (ehemals GREVO) – Änderungsliste
+
+## 01.001.154 - VOXPEERS: Name gross (26.09.2026)
+- Vorabversion, nicht in den Stores. Unter dem App-Symbol steht jetzt VOXPEERS (gross) statt voxpeers; App-Titel in allen 5 Sprachen ebenso.
+- Kurzanleitung, Projektdokument und Abomodell frisch nachgefuehrt.
 
 ## 01.001.153 - VOXPEERS: Icons + Rest-Umbenennung (26.09.2026)
 - Vorabversion, nicht in den Stores. Neues App-Symbol (Schnecke + Wortmarke voxpeers vollstaendig, Android rund/adaptiv; iOS ohne Transparenz).
