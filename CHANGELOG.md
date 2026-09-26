@@ -1,5 +1,11 @@
 # Grevo – Änderungsliste
 
+## 01.001.153 - VOXPEERS: Icons + Rest-Umbenennung (26.09.2026)
+- Vorabversion, nicht in den Stores. Neues App-Symbol (Schnecke + Wortmarke voxpeers vollstaendig, Android rund/adaptiv; iOS ohne Transparenz).
+- Online-Hilfe neu von voxpeers.com.
+- Start-Paket-Texte in 5 Sprachen: CHF 4.50 mit 300 Sprechminuten + 5 Zuhoererstunden Tourist (30 Tage).
+- staging.voxpeers.com als Fuehrungs-Link-Host ergaenzt.
+
 ## 01.001.152 - VOXPEERS: Umbenennung + Weckwort vox (23.09.2026)
 - Vorabversion, nicht in den Stores. App heisst neu voxpeers (Name, Symbol, Texte in 5 Sprachen, support@voxpeers.com).
 - Weckwort neu vox (vox lauter / leiser / connect / heim / spar).
