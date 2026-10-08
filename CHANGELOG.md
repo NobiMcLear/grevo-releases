@@ -1,5 +1,14 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.158 - Geraetemeldung, iPhone-Push, Google Billing 8, Offline-Karten (08.10.2026)
+- Vorabversion. Neu zusaetzlich als Testversion ueber Google Play (interner Test).
+- Neue Google-Kaufabwicklung (Google Play Billing 8 ueber RevenueCat 10.14).
+- Offline-Karten: hoechstens 3000 Kacheln (ca. 90 MB), 7 Tage gueltig, Satellitenbild nur online; alter Kartenspeicher wird einmal geleert.
+- Geraetemeldung fuers Dashboard (Version/Geraetetyp, keine Standortdaten); iPhone-Push «Ich warte» repariert.
+- Den Releases liegt nur noch die Kurzanleitung (Hilfe) als PDF bei.
+
+## 01.001.156 - Navi mit einem Punkt, Echo 8 s, vox start/stop (07.10.2026)
+- Vorabversion. Navi startet auch mit nur einem Ziel; Sprachkommandos «vox start» / «vox stop».
 ## 01.001.155 - Abo-Seite: Zusatzminuten und Tourist-Zuhoererstunden getrennt (26.09.2026)
 - Vorabversion, nicht in den Stores. Abo & Pakete zeigt 'Minuten dazukaufen' und neu getrennt 'VOXPEERS Tourist - Zuhoererstunden fuer Guides' (Mini 45 / Basis 100 / Plus 400 / Maxi 1200).
 - Kurzanleitung, Projektdokument und Abomodell frisch nachgefuehrt.
