@@ -1,5 +1,12 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.159 - Kaeufe aktiv, Tester-Einwilligung, guenstige Adresssuche (13.10.2026)
+- Vorabversion, nicht in den Stores (Google Play: interner Test). Abos und Pakete in der App kaufbar (RevenueCat aktiv).
+- Tester-Diagnosedaten nur mit Einwilligung (Dialog beim ersten Navi-Start/Funk-Beitritt, Schalter im Profil, jederzeit widerrufbar).
+- Adresssuche: beim Tippen nur Vorschlaege, Position erst beim Antippen; Treffer mit allen Suchwoertern zuoberst.
+- AGB/Datenschutz-Links bei der Registrierung, Tempolimit ueber eigenen Server, Android-Berechtigungen bereinigt, iOS-Datenschutz-Manifest, '1 Wegpunkt' im Navi.
+- Kurzanleitung, Projektdokument und Abomodell frisch nachgefuehrt.
+
 ## 01.001.158 - Geraetemeldung, iPhone-Push, Google Billing 8, Offline-Karten (08.10.2026)
 - Vorabversion. Neu zusaetzlich als Testversion ueber Google Play (interner Test).
 - Neue Google-Kaufabwicklung (Google Play Billing 8 ueber RevenueCat 10.14).
