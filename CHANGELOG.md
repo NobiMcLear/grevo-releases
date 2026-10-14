@@ -1,5 +1,11 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.160 - Audio-Verschluesselung + Berechtigungs-Hinweise (14.10.2026)
+- Vorabversion, nicht in den Stores. Sprache im Funk Ende-zu-Ende verschluesselt (AES-256-GCM2, fail-closed): Gruppenfunk, Privatkanal, Tourist (App und Browser).
+- Achtung: Versionen bis 01.001.159 hoeren Geraete mit 01.001.160 im Funk nicht mehr - alle aktualisieren.
+- Android: Erklaer-Dialoge vor Mikrofon-/Standort-Berechtigung (Google-Play-Pflicht); Vordergrunddienst-Typen nur mit erteilter Berechtigung (Android 14).
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.159 - Kaeufe aktiv, Tester-Einwilligung, guenstige Adresssuche (13.10.2026)
 - Vorabversion, nicht in den Stores (Google Play: interner Test). Abos und Pakete in der App kaufbar (RevenueCat aktiv).
 - Tester-Diagnosedaten nur mit Einwilligung (Dialog beim ersten Navi-Start/Funk-Beitritt, Schalter im Profil, jederzeit widerrufbar).
