@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.162 - Verschluesselungs-Anzeige korrigiert (27.10.2026)
+- Vorabversion, nicht in den Stores. Funk-Statuszeile: Verschluesselt (AES-256) statt Ende-zu-Ende verschluesselt (5 Sprachen).
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.161 - Bestaetigungslink auf voxpeers.com/konto (16.10.2026)
 - Vorabversion, nicht in den Stores. Bestaetigungs-Mail nach der Registrierung fuehrt auf https://voxpeers.com/konto/ (App-Sprache) statt auf die Startseite.
 - Passwort-Reset: redirectTo ebenfalls auf /konto/; in der App weiterhin 6-stelliger Code.
