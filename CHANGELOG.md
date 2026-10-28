@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.164 - Guide-Cockpit aufgeraeumt (28.10.2026)
+- Vorabversion, nicht in den Stores. Guide-Cockpit: Tonprobe nur fuer Tester. Tester-Bereich (Echo/Wind/Messdaten) nur noch fuer markierte Tester, auch nach Kontowechsel. Registrierung uebergibt die App-Sprache.
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.163 - Tester-Anzeige pro Konto + Willkommens-Mail-Sprache (28.10.2026)
 - Vorabversion, nicht in den Stores. Tester-Bereich (Echo/Wind/Messdaten) nur noch fuer markierte Tester, auch nach Kontowechsel. Registrierung uebergibt die App-Sprache.
 - Kurzanleitung nachgefuehrt.
