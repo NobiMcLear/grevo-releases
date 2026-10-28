@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.163 - Tester-Anzeige pro Konto + Willkommens-Mail-Sprache (28.10.2026)
+- Vorabversion, nicht in den Stores. Tester-Bereich (Echo/Wind/Messdaten) nur noch fuer markierte Tester, auch nach Kontowechsel. Registrierung uebergibt die App-Sprache.
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.162 - Verschluesselungs-Anzeige korrigiert (27.10.2026)
 - Vorabversion, nicht in den Stores. Funk-Statuszeile: Verschluesselt (AES-256) statt Ende-zu-Ende verschluesselt (5 Sprachen).
 - Kurzanleitung nachgefuehrt.
