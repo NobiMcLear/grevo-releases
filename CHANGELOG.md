@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.166 - Tourist-Fixes (30.10.2026)
+- Vorabversion, nicht in den Stores. Zuhoerer landen beim erneuten Beitritt nicht mehr sofort bei der Bewertung. Neue Zuhoerer im Guide-Cockpit nach hoechstens 10 Sekunden. Minuten-Anzeige uebersetzt, roter Knopf lesbar. Uebersetzungen IT/FR/PT korrigiert.
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.165 - Uebersetzungen + Sprechfunk-Anzeige (28.10.2026)
 - Vorabversion, nicht in den Stores. Uebersetzungsluecken EN/FR/IT/PT geschlossen, Sprechfunk-Zaehler korrigiert. Guide-Cockpit: Tonprobe nur fuer Tester. Tester-Bereich (Echo/Wind/Messdaten) nur noch fuer markierte Tester, auch nach Kontowechsel. Registrierung uebergibt die App-Sprache.
 - Kurzanleitung nachgefuehrt.
