@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.167 - Meldungen und Bewertungen (31.10.2026)
+- Vorabversion, nicht in den Stores. Melden mit Auswahl Fuehrung/Technik, auch auf der Abschluss-Seite. Neue Seite Bewertungen und Meldungen fuer Veranstalter (Sterne pro Fuehrung und Guide). Zuhoererzahl beim Wiederbeitritt korrekt.
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.166 - Tourist-Fixes (30.10.2026)
 - Vorabversion, nicht in den Stores. Zuhoerer landen beim erneuten Beitritt nicht mehr sofort bei der Bewertung. Neue Zuhoerer im Guide-Cockpit nach hoechstens 10 Sekunden. Minuten-Anzeige uebersetzt, roter Knopf lesbar. Uebersetzungen IT/FR/PT korrigiert.
 - Kurzanleitung nachgefuehrt.
