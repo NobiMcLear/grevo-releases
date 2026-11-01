@@ -1,5 +1,9 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.169 - Melden und Blockieren (01.11.2026)
+- Vorabversion, nicht in den Stores. Melden und Blockieren im Gruppenfunk, Profil-Seite Blockierte Personen, Admin: Entfernen und sperren.
+- Kurzanleitung nachgefuehrt.
+
 ## 01.001.167 - Meldungen und Bewertungen (31.10.2026)
 - Vorabversion, nicht in den Stores. Melden mit Auswahl Fuehrung/Technik, auch auf der Abschluss-Seite. Neue Seite Bewertungen und Meldungen fuer Veranstalter (Sterne pro Fuehrung und Guide). Zuhoererzahl beim Wiederbeitritt korrekt.
 - Kurzanleitung nachgefuehrt.
