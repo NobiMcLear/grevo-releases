@@ -1,5 +1,8 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.173 - Start-Karte korrigiert (02.11.2026)
+- Vorabversion, nicht in den Stores. Abo und Pakete: Start-Karte zeigt Kaufen statt Aktiv, wenn kein Paket gekauft.
+
 ## 01.001.172 - Hinweis lesbar (02.11.2026)
 - Vorabversion, nicht in den Stores. Registrierungs-Hinweis im dunklen Design lesbar.
 
