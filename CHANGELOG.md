@@ -1,5 +1,8 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.171 - Sprechfunk ohne Paket (02.11.2026)
+- Vorabversion, nicht in den Stores. Sprechfunk ohne Paket: klare Meldung mit Knopf Abo und Pakete.
+
 ## 01.001.170 - Startmaske korrigiert (02.11.2026)
 - Vorabversion, nicht in den Stores. Startmaske scrollbar (Abo und Pakete war auf hohen Handys abgeschnitten), Versionsanzeige schmaler.
 
