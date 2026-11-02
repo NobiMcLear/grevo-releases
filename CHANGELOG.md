@@ -1,5 +1,8 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.172 - Hinweis lesbar (02.11.2026)
+- Vorabversion, nicht in den Stores. Registrierungs-Hinweis im dunklen Design lesbar.
+
 ## 01.001.171 - Sprechfunk ohne Paket (02.11.2026)
 - Vorabversion, nicht in den Stores. Sprechfunk ohne Paket: klare Meldung mit Knopf Abo und Pakete.
 
