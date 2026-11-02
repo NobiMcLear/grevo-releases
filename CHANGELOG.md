@@ -1,5 +1,8 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.170 - Startmaske korrigiert (02.11.2026)
+- Vorabversion, nicht in den Stores. Startmaske scrollbar (Abo und Pakete war auf hohen Handys abgeschnitten), Versionsanzeige schmaler.
+
 ## 01.001.169 - Melden und Blockieren (01.11.2026)
 - Vorabversion, nicht in den Stores. Melden und Blockieren im Gruppenfunk, Profil-Seite Blockierte Personen, Admin: Entfernen und sperren.
 - Kurzanleitung nachgefuehrt.
