@@ -1,5 +1,8 @@
 # VOXPEERS (ehemals GREVO) – Änderungsliste
 
+## 01.001.175 - AGB-Haekchen und Pflicht-Update (10.11.2026)
+- AGB-Haekchen bei der Registrierung, Meldung Konto gesperrt, Pflicht-Update-Sperre.
+
 ## 01.001.174 - Abo-Abgleich (02.11.2026)
 - Vorabversion, nicht in den Stores. Kaeufe wiederherstellen gleicht das Abo mit dem Store ab.
 
